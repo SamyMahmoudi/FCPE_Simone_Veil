@@ -25,6 +25,9 @@
         </nav>
     </section>
     <p>FCPE Simone Veil - <a href="?page=mentions" title="Mentions Légales">Mentions Légales</a></p>
+    <div class="BtnDon">
+        <iframe  id="haWidget" allowtransparency="true" src="https://www.helloasso.com/associations/fcpe-simone-veil/formulaires/1/widget-bouton" style="width:100%;height:70px;border:none;padding-top:5%;"></iframe>
+    </div>
 </footer>
 
 <script src="js/ResponsiveMenu.js"></script>
