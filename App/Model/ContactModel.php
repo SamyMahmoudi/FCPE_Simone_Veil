@@ -2,8 +2,16 @@
     namespace App\Model;
     use Core\Database;
 
+    /**
+     * Page contact : envoi la demande de contact
+     */
     class ContactModel extends Database {
 
+        /**
+         * envoi la demande de contact dans la bdd
+         *
+         * @return void
+         */
         public function addContactRequest() {
             if (isset($_POST['valider-demande'])) 
             {

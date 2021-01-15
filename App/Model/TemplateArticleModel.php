@@ -3,8 +3,16 @@
     namespace App\Model;
     use Core\Database;
 
+    /**
+     * Page Article : templated'un article
+     */
     class TemplateArticleModel extends Database 
     {
+        /**
+         * recup l'article recherché
+         *
+         * @return void
+         */
         public function recupArticle()
         {
             if(array_key_exists('nb',$_GET))
@@ -22,6 +30,11 @@
             }
         }
 
+        /**
+         * recup tous les articles
+         *
+         * @return void
+         */
         public function AllArticles()
         {
             $query =$this->pdo->query("SELECT article_id, article_titre FROM fcpe_articles");

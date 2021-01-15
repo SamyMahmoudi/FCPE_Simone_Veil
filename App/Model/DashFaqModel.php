@@ -3,8 +3,16 @@
     namespace App\Model;
     use Core\Database;
 
+    /**
+     * Dashboard FAQ : recup / supprime - FAQ
+     */
     class DashFaqModel extends Database {
 
+        /**
+         * recup toutes les questions
+         *
+         * @return void
+         */
         public function recupQuestion() 
         {
             $recup = $this->pdo->query("SELECT * FROM fcpe_qr ORDER BY qr_id DESC");
@@ -12,6 +20,11 @@
             return $data;
         }
 
+        /**
+         * supprime toutes les questions
+         *
+         * @return void
+         */
         public function supprQuestion() 
         {
             if(array_key_exists("delete",$_GET))

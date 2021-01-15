@@ -3,9 +3,17 @@
     namespace App\Model;
     use Core\Database;
 
+    /**
+     * Dashboard View : article - recup / ajt / modif
+     */
     class UnArticleModel extends Database 
     {
 
+        /**
+         * recup l'article
+         *
+         * @return void
+         */
         public function recupArticle()
         {
             if(array_key_exists('nb',$_GET))
@@ -24,6 +32,11 @@
         }
 
 
+        /**
+         * ajoute un article
+         *
+         * @return void
+         */
         public function ajtArticle() 
         {
             if (isset($_POST['valid-ajtArticle'])){
@@ -64,6 +77,11 @@
             }
         }
 
+        /**
+         * modif un article
+         *
+         * @return void
+         */
         public function modifArticle() 
         {
             if (isset($_POST['valid-modifArticle'])){

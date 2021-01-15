@@ -3,8 +3,16 @@
     namespace App\Model;
     use Core\Database;
 
+    /**
+     * page connexion : vérifie si l'utilisateur peut se connecter / deconnecter
+     */
     class ConnexionModel extends Database {
 
+        /**
+         * vérifie si l'utilisateur peut se connecter / admin ou membre
+         *
+         * @return void
+         */
         public function SeConnecter() 
         {
             if(isset($_POST['connexion']))
@@ -46,6 +54,11 @@
             }
         }
 
+        /**
+         * deconnexion de l'utilisateur
+         *
+         * @return void
+         */
         public function seDeconnecter()
         {
             if(array_key_exists("disconnect", $_GET)){

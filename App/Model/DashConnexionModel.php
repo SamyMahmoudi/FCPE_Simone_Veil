@@ -3,8 +3,16 @@
     namespace App\Model;
     use Core\Database;
 
+    /**
+     * dashboard connexion : mots de passe, administration, ...
+     */
     class DashConnexionModel extends Database {
 
+        /**
+         * MAJ identifiant admin
+         *
+         * @return void
+         */
         public function updateIdentifiantAdmin()
         {
             if(isset($_POST['valid-upAdminId']))
@@ -41,6 +49,11 @@
             }
         }
 
+        /**
+         * MAJ mot de passe admin
+         *
+         * @return void
+         */
         public function updatePasswordAdmin()
         {
             if(isset($_POST['valid-upAdminPs']))
@@ -78,6 +91,12 @@
             }
         }
 
+
+        /**
+         * MAJ identifiant membre
+         *
+         * @return void
+         */
         public function updateIdentifiantParent()
         {
             if(isset($_POST['valid-upParentId']))
@@ -114,6 +133,11 @@
             }
         }
 
+        /**
+         * MAJ mot de passe membre
+         *
+         * @return void
+         */
         public function updatePasswordParent()
         {
             if(isset($_POST['valid-upParentPs']))

@@ -3,8 +3,16 @@
     namespace App\Model;
     use Core\Database;
 
+    /**
+     * Dashboard View FAQ : recup / ajt / modif
+     */
     class UneQuestionModel extends Database 
     {
+        /**
+         * recup qr
+         *
+         * @return void
+         */
         public function recupQR()
         {
             if(array_key_exists('nb',$_GET))
@@ -22,6 +30,11 @@
             }
         }
 
+        /**
+         * ajt qr
+         *
+         * @return void
+         */
         public function ajtQuestion()
         {
             if (isset($_POST['valid_qr']))
@@ -41,6 +54,11 @@
             } 
         }
 
+        /**
+         * modif qr
+         *
+         * @return void
+         */
         public function modifQuestion()
         {
             if (isset($_POST['update_qr'])) 
