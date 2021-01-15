@@ -35,8 +35,19 @@
     border: solid 1px black;
     width: 50%;
     padding: 10px 12px;
-    margin-left: 40px;
+    margin: 6% 0px 0px 40px;
 }
+
+.coordonneesDate {
+    font-size: 18px;
+}
+.coordonneesDemande h2 {
+    padding: 10px 0px;
+}
+.coordonneesDemande li {
+    padding-bottom: 10px;
+}
+
 
 .contenuDemande {
     border: solid 1px black;
@@ -45,6 +56,9 @@
     margin: 30px 40px;
 }
 
+.contenuDemande p {
+    padding: 10px 0px;
+}
 /* VIEW ARTICLE */
 
 .template-ArticleDashViews {

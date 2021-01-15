@@ -16,6 +16,7 @@
             <?php foreach($demandes as $demande) ?>
             <h1>Demande n°<?= $demande->contact_id ?></h1>
             <article class="coordonneesDemande">
+                <h2 class="coordonneesDate">Date : <?= $demande->contact_date ?></h2>
                 <h2>Coordonnées</h2>
                 <ul>
                     <li>Nom : <?= $demande->contact_nom ?></li>

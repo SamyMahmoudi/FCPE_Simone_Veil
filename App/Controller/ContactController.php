@@ -11,7 +11,7 @@
             $this->model = new ContactModel();
         }
 
-        /* vérifie que l'utilisateur est soit bien connecté */
+        /* vérifie que l'utilisateur soit bien connecté */
         public function ContactRender() 
         {
             if($_SESSION['Admin'] != true && $_SESSION['Membre'] != true)
