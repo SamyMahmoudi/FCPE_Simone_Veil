@@ -29,9 +29,10 @@
                 <h2><?= $article->article_titre ?></h2>
                 <section>
                     <?= $article->article_contenu ?>
+                    <a href="?page=tousLesArticles" class="linkReturn" title="retour page accueil">Retour</a>
                 </section>
                 <?php endforeach ?>
-                <a href="?page=tousLesArticles" class="linkReturn" title="retour page accueil">Retour</a>
+                
             </article>
         </section>
     </main>
