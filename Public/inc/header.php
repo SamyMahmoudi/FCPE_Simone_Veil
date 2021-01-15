@@ -22,7 +22,7 @@
                 <a href="#" title="groupe-facebook"><img src="./images/imgHeader/lg-facebook.png" alt="grp-facebook"></a>
             </div>
             <span class="iconMenu" onclick="openNav()">&#9776;</span>
-            <div id="myNav" class="overlay">
+            <div id="menuMobile">
                 <span class="closebtn" onclick="closeNav()">&times;</span>
                 <ul class="overlay-content">
                     <?php

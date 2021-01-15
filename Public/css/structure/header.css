@@ -38,7 +38,7 @@ header nav {
     color: #FF8686;
 }
 
-#myNav {
+#menuMobile {
     display: none;
 }
 
@@ -92,7 +92,7 @@ header nav {
         display: none;
     }
 
-    #myNav {
+    #menuMobile {
         display: block;
     }
 
@@ -100,7 +100,7 @@ header nav {
         display: block;
     }
 
-    .overlay {
+    #menuMobile {
         height: 100%;
         width: 0;
         position: fixed;
@@ -120,7 +120,7 @@ header nav {
         margin-top: 20px;
     }
 
-    .overlay a {
+    #menuMobile a {
         padding: 8px;
         text-decoration: none;
         font-size: 72px;
@@ -132,11 +132,12 @@ header nav {
         font-weight: bold;
     }
 
-    .overlay .closebtn {
+    #menuMobile .closebtn {
         position: absolute;
         top: 12px;
         right: 5%;
         font-size: 60px;
+        cursor: pointer;
     }
 
     .headerRsMobile {
@@ -151,7 +152,7 @@ header nav {
         top: 15%;
     }
 
-    .overlay a {
+    #menuMobile a {
         font-size: 32px;
     }
 }
