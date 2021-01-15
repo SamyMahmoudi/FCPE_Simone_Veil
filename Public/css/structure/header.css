@@ -104,7 +104,7 @@ header nav {
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 5;
+        z-index: 99;
         top: 0;
         left: 0;
         background-color: #d0ede1;

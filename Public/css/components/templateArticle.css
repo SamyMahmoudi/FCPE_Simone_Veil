@@ -27,6 +27,7 @@
     color: rgb(0, 0, 0);
     padding: 10px 10px;
     border-radius: 10px;
+    font-family: 'Inter', sans-serif;
 }
 
 .sectionTemplateArticle aside a:hover {
