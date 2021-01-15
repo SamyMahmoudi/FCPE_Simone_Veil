@@ -15,7 +15,7 @@
          */
         public function recupDmdContact()
         {
-            $recup = $this->pdo->query("SELECT * FROM fcpe_contact");
+            $recup = $this->pdo->query("SELECT * FROM fcpe_contact ORDER BY contact_date DESC");
             $data = $recup->fetchAll(\PDO::FETCH_OBJ);
             return $data;
         }
