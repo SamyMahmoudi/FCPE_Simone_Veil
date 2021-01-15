@@ -1,0 +1,148 @@
+.recentArticle 
+{
+    margin:30px 30px 30px 80px;
+    height: 400px;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.recentArticle:hover {
+    box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+.containerImgRecent {
+    height: 60%;
+    width: 100%;
+    margin: auto;
+}
+
+.containerImgRecent img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius:  10px 10px 0px 0px;
+}
+
+.recentArticle p {
+    padding: 80px 20px 0px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+}
+
+.recentArticle div:nth-child(2) {
+    position: absolute;
+    z-index: 2;
+}
+
+.recentArticle h2 {
+    font-size: 32px;
+    font-family: 'Amatic SC';
+    padding: 20px 20px 0px;
+    color: black;
+}
+
+.recentArticle div:nth-child(2) span{
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 32px;
+    border-radius: 4px;
+    background-color: #D4EFE6;
+    height: 16px;
+    width: 100%;
+}
+
+.dateCardArticle {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: black;
+}
+
+.cardArticle {
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    width: calc(33% - 50px);
+    position: relative;
+    margin-bottom: 30px;
+    height: 500px;
+    padding-bottom: 20px;
+}
+.cardArticle:hover{
+    box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.25);
+}
+.cardArticle {
+    text-overflow: ellipsis; 
+    overflow: hidden;
+}
+.cardArticle h2 {
+    color: black;
+    padding: 20px 20px 10px;
+    font-size: 30px;
+    font-family: 'Amatic SC';
+    height: 100px;
+}
+.cardArticle div {
+    height: 200px;
+}
+
+.cardArticle div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cardArticle p {
+    height: 100px;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    line-height: 1.5;
+    padding: 0px 10px;
+    
+}
+.titreTsArticle {
+    padding: 60px 0px 30px 80px;
+    font-family: 'Amatic SC';
+    font-size: 48px;
+}
+
+
+/* ---------------- RESPONSIVE ------------------- */
+@media (max-width:1024px) 
+{
+    .recentArticle {
+        margin: 0px auto;
+    }
+
+    .cardArticle {
+        width: 80%;
+        margin: 30px auto;
+    }
+}
+
+@media (max-width:500px) 
+{
+    .cardArticle {
+        height: 300px;
+    }
+    .cardArticle p {
+        display: none;
+    }
+}
+
+@media (max-width:360px)
+{
+    .cardArticle h2 {
+        font-size: 18px;
+    }
+
+    .recentArticle p {
+        display: none;
+    }
+} 

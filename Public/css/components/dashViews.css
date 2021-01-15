@@ -1,0 +1,80 @@
+ /* PARAMS GENERAL */
+
+ .dashTitleSecond {
+    font-size: 20px;
+    margin: 10px 40px 10px;
+}
+.dashTime {
+    padding: 30px 40px 10px;
+    font-size: 18px;
+}
+.actionDashViews {
+    text-align: center;
+}
+
+.actionDashViews a {
+    padding: 8px 12px;
+    color: white;
+}
+
+.deleteAction {
+    background-color: red;
+}
+
+.updateAction {
+    background-color: blue;
+}
+
+.backAction {
+    background-color: green;
+}
+
+/* VIEW DEMANDE CONTACT */
+
+.coordonneesDemande {
+    border: solid 1px black;
+    width: 50%;
+    padding: 10px 12px;
+    margin-left: 40px;
+}
+
+.contenuDemande {
+    border: solid 1px black;
+    width: 80%;
+    padding: 10px 12px;
+    margin: 30px 40px;
+}
+
+/* VIEW ARTICLE */
+
+.template-ArticleDashViews {
+    padding: 0px 40px;
+    margin:30px auto;
+}
+
+.template-ArticleDashViews img {
+    height: 300px;
+    display: block;
+    margin: 0px auto 20px;
+}
+
+.template-ArticleDashViews p {
+    padding: 10px 0px;
+}
+
+.imgArticleModifDashViews {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.imgArticleModifDashViews img {
+    width: 200px;
+}
+
+/* VIEW QUESTION REPONSE */
+.contenuReponse {
+    margin: 10px 40px 40px;
+} 
+

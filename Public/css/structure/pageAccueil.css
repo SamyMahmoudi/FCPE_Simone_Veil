@@ -1,0 +1,320 @@
+.LandingPage-Accueil {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerRecentArticle 
+{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.LandingPage-Accueil aside {
+    width: 30%;
+    height: 100%;
+}
+
+.LandingPage-Accueil aside article {
+    margin:30px 80px 30px 30px;
+    height: 100%;
+    background-color: #d0ede1;
+    position: relative;
+    border-radius: 10px;
+}
+
+.LandingPage-Accueil aside article a {
+    border-radius: 8px;
+    padding: 12px 12px;
+    color: white;
+    background-color: #214486;
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin: 15px auto;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.LandingPage-Accueil aside article h2 {
+    padding: 20px 25px 15px;
+    font-size: 36px;
+    font-family: 'Amatic SC';
+} 
+
+.LandingPage-Accueil aside article p {
+    padding: 10px 25px 15px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.containerArticles{
+    width: calc(100% - 160px);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.seeMoreAccueil {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 20px;
+    right: 0px;
+}
+
+.seeMoreAccueil a {
+    font-size: 16px;
+    color: black;
+    margin-left: 10px;
+    border-bottom: solid black 1px;
+}
+/* SECTION FAQ */
+
+.sectionFaq-Accueil {
+    background-color: #dfe8f6;
+}
+
+.sectionFaq-Accueil h2 {
+    text-align: center;
+    padding: 50px 0px 10px;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.73;
+    letter-spacing: normal;
+    font-family: 'Amatic SC';
+}
+
+.faqEtoile{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.containerCardFaq {
+    width: calc(100% - 160px);
+    margin: auto;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.behindQuestion {
+    position: absolute;
+    width: 100%;
+    top: -6px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 0;
+    
+}
+
+.behindQuestion article {
+    background-color: #fafafae0;
+    width: calc(50% - 80px);
+    padding-bottom: 80px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cardQuestion {
+    margin-top: 40px;
+    position: relative;
+    z-index: 3;
+    width: calc(50% - 20px);
+    padding-bottom: 80px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.sectionFaq-Accueil section article h3 {
+    padding: 30px 15px 15px;
+    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+    color: #214486;
+}
+
+.sectionFaq-Accueil section article p {
+    padding: 0px 15px;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+.sectionParentsMembres-Accueil {
+    position: relative;
+}
+
+.sectionParentsMembres-Accueil h2 {
+    transform: rotate(-5deg);
+    top: -3%;
+    left: 80px;
+    position: absolute;
+    font-family: 'Amatic SC';
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.73;
+    letter-spacing: normal;
+}
+
+.sectionParentsMembres-Accueil section {
+    display: flex;
+    width: calc(100% - 160px);   
+}
+
+.articleAvatarPM-Accueil {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    margin: 100px 0 120px;
+}
+
+.articleAvatarPM-Accueil div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.articleAvatarPM-Accueil div span {
+    padding: 15px 0px;
+    color: #c4c4c4;
+}
+
+.articleExpliPM-Accueil {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.articleExpliPM-Accueil p {
+    width: 100%;
+    padding-bottom: 30px;
+    color: #214486;
+    font-family: 'Inter', sans-serif;
+}
+
+.articleExpliPM-Accueil a {
+    border-radius: 8px;
+    padding: 12px 30px;
+    color: white;
+    background-color: #214486;
+    position: absolute;
+    right: 80px;
+    bottom: 20%;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ---------------- RESPONSIVE ------------------- */
+@media (max-width:1024px) 
+{
+    .LandingPage-Accueil {
+        flex-direction: column;
+        margin: 30px auto;
+    }
+
+    .containerRecentArticle {
+        width: 90%;
+        margin: 0px auto 30px;
+    }
+
+    .LandingPage-Accueil aside {
+        width: 90%;
+        margin: 0px auto;
+    }
+    
+    .LandingPage-Accueil aside article {
+        margin: 0px auto 30px;
+    }
+
+    .containerArticles {
+        width: 90%;
+    }
+}
+
+@media (max-width:768px)
+{
+    .articleAvatarPM-Accueil {
+        width: 100%;
+        margin: auto;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .sectionParentsMembres-Accueil section {
+        flex-direction: column;
+        width: 90%;
+        margin: 0px auto;
+        padding-top: 50px;
+    }
+
+    .articleExpliPM-Accueil {
+        width: 100%;
+    }
+    
+    .articleExpliPM-Accueil a {
+        position: relative;
+        right: 0;
+        margin-bottom: 20px;
+        display: inline;
+        text-align: center;
+    }
+
+    .seeMoreAccueil {
+        display: none;
+    }
+
+    .behindQuestion {
+        display: none;
+    }
+
+    .containerCardFaq {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 40px);
+    }
+
+    .cardQuestion {
+        width: 90%;
+    }
+}
+
+@media (max-width:450px) {
+    .sectionFaq-Accueil h2 {
+        font-family: 'Inter', sans-serif;
+        font-weight: normal;
+        line-height: normal;
+    }
+
+    .articleAvatarPM-Accueil div {
+        padding: 0px;
+    }
+    .sectionParentsMembres-Accueil h2 {
+        font-size: 40px;
+        text-align: center;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
+
+    

@@ -1,0 +1,38 @@
+.mainFaq {
+    min-height: 90vh;
+    background-color: #DFE8F6;
+} 
+
+.mainFaq section {
+    width: calc(100% - 160px);
+    margin: auto;
+}
+
+.mainFaq section h1 {
+    padding: 60px 0px 30px;
+    font-family: 'Amatic SC';
+    font-size: 48px;
+}
+
+.faqRedirectionContact {
+    padding-top: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.faqRedirectionContact a {
+    font-weight: bold;
+    color: black;
+}
+
+@media (max-width:600px) {
+    .mainFaq section {
+        width: calc(100% - 80px);
+    }
+}
+
+@media (max-width:400px) {
+    .mainFaq section h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,20 @@
+@import 'reset.css';
+
+@import './structure/header.css';
+@import './structure/footer.css';
+@import './structure/pageConnexion.css';
+@import './structure/pageAccueil.css';
+@import './structure/pageFaq.css';
+@import './structure/pageContact.css';
+@import './structure/pageDashboard.css';
+@import './components/cardArticle.css';
+@import './components/questionFaq.css';
+@import './components/formContact.css';
+@import './components/templateArticle.css';
+
+
+@import './components/dashMenu.css';
+@import './components/dashForms.css';
+@import './components/dashTable.css';
+@import './components/dashViews.css';
+

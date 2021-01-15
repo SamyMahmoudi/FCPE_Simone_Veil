@@ -1,0 +1,89 @@
+.mainTemplateArticle {
+    background-color: rgb(240, 236, 236);
+}
+
+.sectionTemplateArticle {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+
+.headlinerArticle {
+    padding: 80px 80px 30px;
+}
+
+.sectionTemplateArticle aside {
+    width: calc(30% - 80px);
+    margin-left: 80px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.sectionTemplateArticle aside a {
+    color: rgb(0, 0, 0);
+    padding: 0px 10px;
+}
+
+.sectionTemplateArticle aside hr {
+    border: solid 0.5px rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    margin: 8px auto 30px;
+    width: 80%;
+}
+
+.sectionTemplateArticle article {
+    width: calc(70% - 160px);
+    margin: 0px 80px;
+}
+
+.sectionTemplateArticle article h2 {
+    padding: 30px 0px;
+}
+
+.sectionTemplateArticle article div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.sectionTemplateArticle article div {
+    height: 200px;
+}
+
+.sectionTemplateArticle article section p{
+    padding: 10px 0px;
+}
+
+.linkReturn {
+    color: blue;
+}
+
+.linkReturn:hover {
+    border-bottom: solid black 1px;
+}
+
+/************ RESPONSIVE ****************/
+
+@media (max-width:1024px)
+{
+    .headlinerArticle {
+        display: none;
+    }
+
+    .sectionTemplateArticle {
+        flex-direction: column-reverse;
+    }
+
+    .sectionTemplateArticle article {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .sectionTemplateArticle aside {
+        width: 90%;
+        margin: 20px auto;
+    }
+}

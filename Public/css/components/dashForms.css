@@ -1,0 +1,89 @@
+.dashArticleForm,.dashQuestionForm
+{
+    width: 70%;
+    margin: auto;
+    
+}
+
+.dashArticleForm section, .dashQuestionForm section  
+{
+    margin: auto;
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dashArticleForm section input, .dashQuestionForm section input { 
+    padding: 8px 12px;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.dashArticleForm section textarea
+{
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    margin: 10px 0px 20px;
+    height: 40px;
+}
+
+.dashQuestionForm input 
+{
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.dashQuestionForm textarea
+{
+    width: 100%;
+}
+
+.dashArticleForm input[type="submit"], .dashQuestionForm input[type="submit"]
+{
+    margin: 20px 0px;
+    width: 100%;
+    padding: 8px 12px;
+    background-color: #45CA9D;
+    color: white;
+    border: none;
+}
+
+.dashArticleForm input[type="submit"]:hover, .dashQuestionForm input[type="submit"]:hover {
+    background-color:  #214486;
+}
+
+.containerFormConnection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.formUpdateConnection {
+    margin: 30px 40px;
+    width: calc(50%  - 80px);
+    display: flex;
+    flex-direction: column;
+}
+
+.formUpdateConnection h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.formUpdateConnection input 
+{
+    margin: 5px 0px;
+    padding: 8px 12px;
+}
+
+.formUpdateConnection input[type="submit"]
+{
+    width: 100%;
+    padding: 8px 12px;
+    color: white;
+    background-color:  #214486;
+    border: none;
+
+}

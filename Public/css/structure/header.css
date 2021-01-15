@@ -1,0 +1,154 @@
+header {
+    border-bottom: solid rgb(240, 240, 240) 1px;
+}
+
+
+header section {
+    width: calc(100% - 160px);
+    padding-top: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuDesktop {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.menuDesktop li {
+    font-family: 'Amatic SC';
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.menuDesktop li a {
+    color: black;
+}
+
+#myNav {
+    display: none;
+}
+
+.iconMenu {
+    display: none;
+    cursor: pointer;
+    font-size: 36px;
+    color:  #214486 ;
+}
+
+.closebtn {
+    color: rgb(0, 0, 0);
+}
+
+/* RESPONSIVE */
+
+@media (max-width:1200px) {
+    .menuDesktop li {
+        font-size: 24px;
+    }
+
+    .headerRs {
+        display: flex;
+        align-items: center;
+    }
+
+    .headerRs img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width:1024px) {
+
+    header section {
+        width: 90%;
+        padding-top: 0;
+    }
+
+    .lg-header {
+        padding-top: 10px;
+    }
+
+    header nav {
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menuDesktop,
+    .headerRs {
+        display: none;
+    }
+
+    #myNav {
+        display: block;
+    }
+
+    .iconMenu {
+        display: block;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        background-color: #d0ede1;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 72px;
+        margin-bottom: 15px;
+        color: #214486;
+        display: block;
+        transition: 0.3s;
+        font-family: 'Amatic SC';
+        font-weight: bold;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 12px;
+        right: 5%;
+        font-size: 60px;
+    }
+
+    .headerRsMobile {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) {
+
+    .overlay-content {
+        top: 15%;
+    }
+
+    .overlay a {
+        font-size: 32px;
+    }
+}

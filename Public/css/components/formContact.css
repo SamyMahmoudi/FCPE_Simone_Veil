@@ -1,0 +1,101 @@
+#formContact {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0px;
+    padding-top: 5%;
+}
+
+#formContact section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#formContact section label {
+    width: 20%;
+}
+
+#formContact section div {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+#formContact section div input,
+#formContact section div select {
+    padding: 8px 12px;
+}
+
+.identiteContact input {
+    width: 50%;
+}
+
+.infosContact {
+    margin-top: 15px;
+}
+
+.infosContact input,
+.infosContact select {
+    width: 100%;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+.infosContact select option {
+    font-size: 14px;
+}
+
+.demandeContact {
+    padding-top: 15px;
+}
+
+.demandeContact textarea {
+    width: calc(100% - 12px);
+    padding: 6px;
+    resize: none;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+#formContact input[type=submit] {
+    padding: 12px 20px;
+    display: block;
+    margin: 15px auto 0px;
+    background-color: #214486;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+
+.name input{
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+@media (max-width:768px)
+{
+    #formContact {
+        width: 90%;
+    }
+
+    #formContact section label {
+        display: none;
+    }
+
+    #formContact section {
+        justify-content: center;
+    }
+
+    /* .name {
+        flex-direction: column;
+        box-sizing: border-box;
+    } */
+
+    /* .identiteContact input {
+        width: 100%;
+    } */
+
+    /* .identiteContact input:nth-child(1) {
+        margin: 15px 0px;
+    } */
+}

@@ -1,0 +1,44 @@
+.mainContact {
+    background-color: #FF8686;
+    padding-bottom: 60px;
+}
+
+.textContact p {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    padding: 20px 20px 0px;
+    color: white;
+    font-size: 16px;
+}
+
+.textContact {
+    padding-bottom: 20px;
+}
+
+.textContact h1 {
+    font-family: 'Amatic SC';
+    font-size: 48px;
+    text-align: center;
+    padding-top: 60px;
+    color: white;
+}
+
+.sectionContactForm {
+    width: 60%;
+    background-color:white;
+    margin:auto;
+    border-radius: 15px;
+}
+
+/* MOBILE VERSION */
+@media (max-width:1024px){
+
+    .sectionContactForm
+    {
+        width: 90%;
+        background-color:white;
+        margin:auto;
+        border-radius: 15px;
+    }
+
+}

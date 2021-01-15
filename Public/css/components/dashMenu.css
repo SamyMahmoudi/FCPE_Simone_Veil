@@ -1,0 +1,75 @@
+.dashboard
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100vh;
+    background-color: #312F2F;
+}
+
+.dashboard article
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.dashboard article a 
+{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+.dashMenuReturnSite {
+    display: block;
+    color: white;
+    background-color: #214486;
+    padding: 12px 20px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.dashMenuReturnSite a {
+    font-size: 18px;
+}
+
+.composantMenu h2 {
+    font-size: 32px;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold; 
+}
+
+.composantMenu hr {
+    width: 80%;
+    margin: 0px auto 8px;
+    background-color: color;
+    border: solid white 1px;
+}
+
+.composantMenu h3 {
+    font-size: 16px;
+    padding-left: 20px;
+    
+}
+
+.composantMenu div {
+    padding: 5px 0px 0px 80px;
+    display: flex;
+    align-items: center;
+}
+
+.composantMenu a:hover
+{
+    color: rgb(128, 255, 185);
+}
+
+.logoMenuDash {
+    width: 120px;
+    padding-top: 30px;
+    display: block;
+    margin: auto;
+
+}
