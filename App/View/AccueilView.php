@@ -26,7 +26,7 @@
                         <span></span>
                     </div>
                     <p><?=$recentArticleDatas[0]['article_desc'] ?></p>
-                    <span class="dateCardArticle"><?=$recentArticleDatas[0]['article_date'] ?></span>
+                    <span class="dateCardArticle"><?=strftime("%d / %m / %G", strtotime($recentArticleDatas[0]['article_date'])); ?></span>
                     </a>                    
                 </article>
             </section>
@@ -50,11 +50,15 @@
                             </div>
                             <h2>'.$Article->article_titre.'</h2>
                             <p>'.$Article->article_desc.'</p>
-                            <span class="dateCardArticle">'.$Article->article_date.'</span>
+                            <span class="dateCardArticle">'.strftime("%d / %m / %G", strtotime($Article->article_date)).'</span>
                         </article>
                     </a>';
             }   
         endforeach ?>
+            <div class="seeMoreAccueil">
+                <img src="./images/imgAccueil/arrow.png" alt="arrow">
+                <a href="?page=tousLesArticles" title="voir les articles"> Voir tous les articles</a>
+            </div>
         </section>
         <section class="sectionFaq-Accueil">
             <h2>Dernières questions de la FAQ*</h2>
@@ -99,8 +103,8 @@
                     </div>
                 </article>
                 <article class="articleExpliPM-Accueil">
-                    <p>Some quick example text to build on the card title aSome quick example text to build on the card title aSome quick example text.</p>
-                    <p>Some quick example text to build on the card title aSome quick example text to build on the card title aSome quick example text to build on the card title and make.Some quick example text to build on the card title aSome quick example text.</p>
+                    <p>Ce site est administré par deux membres de la FCPE Simone Veil. Merci de respecter l'usage de ce site.</p>
+                    <p>N'oubliez pas de rejoindre nos différents groupes sur les réseaux sociaux tels que facebook ou messenger afin de suivre nos dernières actualités et communiquer avec d'autres parents d'élèves.</p>
                     <a href="?page=contact" title="contacter les membres">Je contacte les membres</a>
                 </article>
             </section>

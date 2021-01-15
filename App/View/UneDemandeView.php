@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact demande</title>
+    <title>Dashboard Contact</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
             <?php foreach($demandes as $demande) ?>
             <h1>Demande n°<?= $demande->contact_id ?></h1>
             <article class="coordonneesDemande">
-                <h2 class="coordonneesDate">Date : <?= $demande->contact_date ?></h2>
+                <h2 class="coordonneesDate">Date : <?= strftime("%d / %m / %G", strtotime($demande->contact_date)) ?></h2>
                 <h2>Coordonnées</h2>
                 <ul>
                     <li>Nom : <?= $demande->contact_nom ?></li>

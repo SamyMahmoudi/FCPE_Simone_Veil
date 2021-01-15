@@ -52,7 +52,7 @@
             {
                 echo '
                     <h1>Article : '.$articlesDatas[0]["article_titre"].'</h1>
-                    <p class="dashTime">Créée le : '.$articlesDatas[0]["article_date"].'</p>
+                    <p class="dashTime">Créée le : '.strftime("%d / %m / %G", strtotime($articlesDatas[0]["article_date"])).'</p>
                     <section class="template-ArticleDashViews">
                         <img src="./images/imgArticles/'.$articlesDatas[0]["article_img"].'" alt="image article">
                         <article class="contenuArticle">'.$articlesDatas[0]["article_contenu"].'</article>

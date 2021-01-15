@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact demande</title>
+    <title>Question</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="ckeditor/ckeditor.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -46,7 +46,7 @@
                     echo '
                         <h1>Question : '.$qrDatas[0]["qr_question"].'</h1>
                         
-                        <p class="dashTime">Date de mise en ligne : '.$qrDatas[0]["qr_date"].'</p>
+                        <p class="dashTime">Date de mise en ligne : '.strftime("%d / %m / %G", strtotime($qrDatas[0]["qr_date"])).'</p>
                         <h2 class="dashTitleSecond">Réponse :</h2>
                         <article class="contenuReponse">'.$qrDatas[0]["qr_reponse"].'</article>
                         <article class="actionDashViews">            

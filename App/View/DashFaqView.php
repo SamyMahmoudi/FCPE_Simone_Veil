@@ -25,7 +25,7 @@
                     <?php foreach($qrDatas as $qrData) :?>
                     <tr>
                         <td><?= $qrData->qr_question?></td>
-                        <td><?= $qrData->qr_date?></td>
+                        <td><?= strftime("%d / %m / %G", strtotime($qrData->qr_date))?></td>
                         <td><a class="table-link green-link" title="Voir la question-reponse" href="?ad=actionFaq&act=show&nb=<?= $qrData->qr_id ?>">Voir la question</a></td>
                         <td><a class="table-link blue-link" title="Voir la question-reponse" href="?ad=actionFaq&act=update&nb=<?= $qrData->qr_id ?>">Modifier la question</a></td>
                         <td><a class="table-link red-link" title="Supprimer la question-reponse" href="?ad=gestionFaq&delete=<?=$qrData->qr_id ?>"><img src="./images/imgAdmin/picto/trash-2.png" alt="trash"></a></td>

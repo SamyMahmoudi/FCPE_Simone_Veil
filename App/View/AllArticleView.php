@@ -23,7 +23,7 @@
                     </div>
                     <h2>'.$Article->article_titre.'</h2>
                     <p>'.$Article->article_desc.'</p>
-                    <span class="dateCardArticle">'.$Article->article_date.'</span>
+                    <span class="dateCardArticle">'.strftime("%d / %m / %G", strtotime($Article->article_date)).'</span>
                 </article>
                 </a>';
         endforeach ?>

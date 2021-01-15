@@ -93,4 +93,8 @@ footer a:hover {
     footer nav a {
         font-size: 36px;
     }
+    .BtnDon {
+        right: 0px;
+        width: 100%;
+    }
 }

@@ -195,7 +195,9 @@
 
 .articleAvatarPM-Accueil div span {
     padding: 15px 0px;
-    color: #c4c4c4;
+    color: #70c24a;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
 }
 
 .articleExpliPM-Accueil {
@@ -279,7 +281,7 @@
     }
 
     .seeMoreAccueil {
-        display: none;
+        bottom: 40px;
     }
 
     .behindQuestion {
@@ -291,6 +293,7 @@
         justify-content: center;
         align-items: center;
         width: calc(100% - 40px);
+        padding-bottom: 120px;
     }
 
     .cardQuestion {

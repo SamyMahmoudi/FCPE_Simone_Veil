@@ -1,5 +1,6 @@
 .recentArticle 
 {
+    width: 100%;
     margin:30px 30px 30px 80px;
     height: 400px;
     background-color: white;
@@ -126,10 +127,29 @@
     }
 }
 
+@media (max-width:768px)
+{
+    .cardArticle h2 {
+        height: 100%;
+        padding-bottom: 20px;
+    }
+}
+
 @media (max-width:500px) 
 {
+    .recentArticle h2 {
+        font-size: 22px;
+    }
+
+    .recentArticle div:nth-child(2) span {
+        display: none;
+    }
+    .recentArticle p {
+        display: none;
+    }
+
     .cardArticle {
-        height: 300px;
+        height: 400px;
     }
     .cardArticle p {
         display: none;
@@ -139,7 +159,7 @@
 @media (max-width:360px)
 {
     .cardArticle h2 {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .recentArticle p {

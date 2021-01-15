@@ -23,7 +23,7 @@
 
                 if (empty($lastIdentifiant) || empty($newIdentifiant) ||  empty($validNewIdentifiant))
                 {
-                    header("Location:?ad=gestionConnexion&champsVides");
+                    header("Location:?ad=gestionConnexion&act=paramAdmin&champsVides");
                 } 
                 else 
                 {
@@ -36,14 +36,14 @@
                         {
                             $updateIdentifiant = $this->pdo->prepare("UPDATE fcpe_users SET user_identifiant = ? WHERE user_statut = ? ");
                             $updateIdentifiant->execute(array(htmlspecialchars($newIdentifiant),$_SESSION['Connect']));
-                            header("Location:?ad=gestionConnexion&reussiteUpdate");
+                            header("Location:?ad=gestionConnexion&act=paramAdmin&reussiteUpdate");
                         } 
                         else {
-                            header("Location:?ad=gestionConnexion&differentsIdentifiants");
+                            header("Location:?ad=gestionConnexion&act=paramAdmin&differentsIdentifiants");
                         }
                     } 
                     else {
-                        header("Location:?ad=gestionConnexion&mauvaisIdentifiant");
+                        header("Location:?ad=gestionConnexion&act=paramAdmin&mauvaisIdentifiant");
                     } 
                 }
             }
@@ -64,7 +64,7 @@
 
                 if (empty($lastPassword) || empty($newPassword) ||  empty($validNewPassword))
                 {
-                    header("Location:?ad=gestionConnexion&champsVides");
+                    header("Location:?ad=gestionConnexion&act=paramAdmin&champsVides");
                 } 
                 else 
                 {
@@ -78,14 +78,14 @@
                             $password = password_hash($newPassword, PASSWORD_DEFAULT);
                             $updatePassword = $this->pdo->prepare("UPDATE fcpe_users SET user_password = ? WHERE user_statut = ? ");
                             $updatePassword->execute(array($password,$_SESSION['Connect']));
-                            header("Location:?ad=gestionConnexion&reussiteUpdate");
+                            header("Location:?ad=gestionConnexion&act=paramAdmin&reussiteUpdate");
                         } 
                         else {
-                            header("Location:?ad=gestionConnexion&differentsPassword");
+                            header("Location:?ad=gestionConnexion&act=paramAdmin&differentsPassword");
                         }
                     } 
                     else {
-                        header("Location:?ad=gestionConnexion&mauvaisPassword");
+                        header("Location:?ad=gestionConnexion&act=paramAdmin&mauvaisPassword");
                     } 
                 }
             }
