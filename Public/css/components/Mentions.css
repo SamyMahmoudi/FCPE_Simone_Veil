@@ -1,0 +1,25 @@
+/* VERSION DESKTOP */
+
+
+.containerM {
+    background:white;
+	width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    padding:5%;
+}	
+    
+.text {
+        background: white;
+        margin: auto;
+}
+    
+
+.text a {
+color: black;
+font-family: 'Open Sans', sans-serif;   
+line-height: 1rem;
+text-align: center;
+font-size: 15px;
+}
+        

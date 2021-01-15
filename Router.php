@@ -12,6 +12,7 @@
     use App\Controller\DashContactController;
     use App\Controller\UneDemandeController;
     use App\Controller\DashConnexionController;
+    use App\Controller\MentionsController;
 
 
 
@@ -42,6 +43,10 @@
             case 'faq' :
                 $controller = new FaqController();
                 $controller->FaqRender();
+            break;
+            case 'mentions' :
+                $controller = new MentionsController();
+                $controller->MentionsRender();
             break;
             default:
                 $controller = new ConnexionController();

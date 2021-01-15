@@ -24,7 +24,7 @@
             </ul>
         </nav>
     </section>
-    <p>FCPE Simone Veil - <a href="#" title="Mentions Légales">Mentions Légales</a></p>
+    <p>FCPE Simone Veil - <a href="?page=mentions" title="Mentions Légales">Mentions Légales</a></p>
 </footer>
 
 <script src="js/ResponsiveMenu.js"></script>
