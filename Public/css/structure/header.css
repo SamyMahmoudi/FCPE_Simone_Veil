@@ -34,6 +34,9 @@ header nav {
 .menuDesktop li a {
     color: black;
 }
+.menuDesktop li a:hover {
+    color: #FF8686;
+}
 
 #myNav {
     display: none;
