@@ -5,10 +5,12 @@
 
     class ConnexionController {
 
+        /* Constructeur de classes */
         public function __construct(){
             $this->model = new ConnexionModel();
         }
         
+        /* Force l'utilisateur à se connecter */
         public function ConnexionRender() 
         {
             if(array_key_exists("disconnect", $_GET))
@@ -20,3 +22,5 @@
         }
 
     }
+
+    

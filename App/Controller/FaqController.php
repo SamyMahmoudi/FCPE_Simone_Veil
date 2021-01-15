@@ -5,12 +5,13 @@
 
     class FaqController {
 
+        /* Constructeur de classes */
         public function __construct()
         {
             $this->model = new FaqModel();
         }
     
-
+        /* Vérifie si l'utilisateur est bien connecté */
         public function FaqRender() 
         {
             if($_SESSION['Admin'] != true && $_SESSION['Membre'] != true)

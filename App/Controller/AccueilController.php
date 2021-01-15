@@ -6,10 +6,12 @@
 
     class AccueilController {
 
+        /* Constructeur de classes */
         public function __construct() {
             $this->model = new AccueilModel();
         }
 
+        /* Vérifie si l'utilisateur est bien connecté */
         public function AccueilRender() 
         {
             if($_SESSION['Admin'] != true && $_SESSION['Membre'] != true)

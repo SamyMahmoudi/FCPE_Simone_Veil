@@ -5,11 +5,13 @@
 
     class UnArticleController {
 
+        /* Constructeur de classes */
         public function __construct()
         {
             $this->model = new UnArticleModel();
         }
 
+        /* Vérifie si l'utilisateur est bien connecté */
         public function UnArticleRender() {
 
             if ($_SESSION['Admin']!= true || empty($_SESSION['Connect']))

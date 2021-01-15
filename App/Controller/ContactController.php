@@ -5,11 +5,13 @@
 
     class ContactController {
 
+        /* Constructeur de classes */
         public function __construct()
         {
             $this->model = new ContactModel();
         }
 
+        /* vérifie que l'utilisateur est soit bien connecté */
         public function ContactRender() 
         {
             if($_SESSION['Admin'] != true && $_SESSION['Membre'] != true)

@@ -5,11 +5,13 @@
 
     class DashContactController 
     {
+        /* Constructeur de classes */
         public function __construct() 
         {
             $this->model = new DashContactModel();
         }
 
+        /* Vérifie si l'utilisateur est bien connecté */
         public function DashContactRender() 
         {
             if ($_SESSION['Admin']!= true || empty($_SESSION['Connect']))

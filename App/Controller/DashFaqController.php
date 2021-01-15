@@ -5,12 +5,13 @@
 
     class DashFaqController {
 
+        /* Constructeur de classes */
         public function __construct()
         {
             $this->model = new DashFaqModel();
         }
     
-
+        /* Vérifie si l'utilisateur est bien connecté */
         public function DashFaqRender() 
         {
             if ($_SESSION['Admin']!= true || empty($_SESSION['Connect']))

@@ -7,11 +7,13 @@
     class UneQuestionController 
     {
 
+        /* Constructeur de classes */
         public function __construct()
         {
             $this->model = new UneQuestionModel();
         }
 
+        /* vérifie que l'utilisateur est soit bien connecté */
         public function actionfaqRender() 
         {
             if ($_SESSION['Admin']!= true || empty($_SESSION['Connect']))

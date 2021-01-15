@@ -6,11 +6,13 @@
     class UneDemandeController 
     {
 
+        /* Constructeur de classes */
         public function __construct()
         {
             $this->model = new UneDemandeModel();
         }
 
+        /* Vérifie si l'utilisateur est bien connecté */
         public function demandeRender() 
         {
             if ($_SESSION['Admin']!= true || empty($_SESSION['Connect']))

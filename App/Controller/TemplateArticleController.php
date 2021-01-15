@@ -5,11 +5,13 @@
 
     class TemplateArticleController {
 
+        /* Constructeur de classes */
         public function __construct()
         {
             $this->model = new TemplateArticleModel();
         }
 
+        /* Vérifie si l'utilisateur est bien connecté */
         public function ArticleRender()
         {
             if($_SESSION['Admin'] != true && $_SESSION['Membre'] != true)
